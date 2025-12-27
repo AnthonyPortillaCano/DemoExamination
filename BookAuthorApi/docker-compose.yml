@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  bookauthorapi:
+    build: .
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal,1433;Database=DemoExaminationDb;User Id=sa;Password=SqlServer@123;TrustServerCertificate=True
+    ports:
+      - "8080:80"
