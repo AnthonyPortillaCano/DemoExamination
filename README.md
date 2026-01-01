@@ -25,5 +25,16 @@ Solución de ejemplo para la gestión de libros y autores con autenticación JWT
 - Usuario: `user` / Contraseña: `Password123`
 
 ## Notas
-- La carpeta `.vs/` está excluida del control de versiones.
-- Para subir libros por CSV, usa el endpoint `/api/books/upload` en Swagger.
+
+## Script de Base de Datos
+Para crear la base de datos y las tablas necesarias manualmente, ejecuta el script `script01012026.sql` en tu servidor SQL Server.
+
+Ejemplo de uso:
+1. Abre SQL Server Management Studio (SSMS) o Azure Data Studio.
+2. Copia el contenido de `script01012026.sql`.
+3. Ejecútalo sobre tu base de datos destino.
+
+El script incluye:
+- Creación de tablas `Authors`, `Books` y migraciones de EF Core.
+- Inserción de datos de ejemplo.
+- Relaciones y llaves foráneas.
